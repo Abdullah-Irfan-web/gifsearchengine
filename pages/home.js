@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import Gif from './Gif.js';
+import Gif from './Gif';
 import Link from 'next/link';
 import {auth} from '../firebase-config'
 import { signOut } from 'firebase/auth';
