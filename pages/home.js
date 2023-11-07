@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {auth} from '../firebase-config'
 import { signOut } from 'firebase/auth';
 import Router from 'next/router';
-import GIF from './Gif';
+import Gif from './Gif';
 const Homepage = () => {
   useEffect(() => {
     let authToken = sessionStorage.getItem('Auth Token')
@@ -87,7 +87,7 @@ const Homepage = () => {
       <div className="output">
 
       {gifdata && gifdata.map((datas,index)=>(
-       <GIF key={index} data={datas} keys={index}/>
+       <Gif key={index} data={datas} keys={index}/>
         
       ))}
 
