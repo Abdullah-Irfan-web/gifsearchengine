@@ -6,7 +6,7 @@ import {auth} from '../firebase-config'
 import { signOut } from 'firebase/auth';
 import Router from 'next/router';
 import Image from 'next/image'
-const favourite = () => {
+const Favourite = () => {
     useEffect(() => {
         let authToken = sessionStorage.getItem('Auth Token')
     
@@ -45,4 +45,4 @@ const favourite = () => {
   )
 }
 
-export default favourite
+export default Favourite
