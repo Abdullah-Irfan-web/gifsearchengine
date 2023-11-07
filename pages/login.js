@@ -63,7 +63,7 @@ const Signup = () => {
         <button onClick={login} className='sub'>Login</button>
        </div>
        <div className='log'>
-        Don't have Account  <Link href="/">Register</Link>
+        Do not have Account  <Link href="/">Register</Link>
        </div>
        <Alert
         header={'Message'}

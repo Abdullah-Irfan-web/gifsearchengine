@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import FavoriteContext from '../Fav'
 import Image from 'next/image'
-const gif = (props) => {
+const Gif = (props) => {
     const Favctx=useContext(FavoriteContext);
     const itemisfav=Favctx.isFvrt(props.data.images.fixed_height.url);
     function togglefavbtn(){
@@ -17,7 +17,7 @@ const gif = (props) => {
   return (
     <div>
         
-           <Image height={100} width={100}  alt="gif" className='img' src={props.data.images.fixed_height.url} />
+           <Image key={props.keys} height={100} width={100}  alt="gif" className='img' src={props.data.images.fixed_height.url} />
            <div className='favbtn'>
         <button className='favrbtn' onClick={togglefavbtn}>{itemisfav?'Remove from Favorites':'To Favorite'}</button>
     </div>
@@ -25,4 +25,4 @@ const gif = (props) => {
   )
 }
 
-export default gif
+export default Gif

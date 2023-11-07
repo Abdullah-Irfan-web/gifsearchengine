@@ -35,9 +35,9 @@ const Favourite = () => {
 
     <div className="output">
 
-    {Favctx.Favorites && Favctx.Favorites.map((data)=>(
+    {Favctx.Favorites && Favctx.Favorites.map((data,index)=>(
         
-       <Image height={100} width={100} alt="gif" src={data} />
+       <Image key={index} height={100} width={100} alt="gif" src={data} />
     ))}
 
     </div>
