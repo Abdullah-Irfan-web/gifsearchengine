@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {auth} from '../firebase-config'
 import { signOut } from 'firebase/auth';
 import Router from 'next/router';
-import Gif from './Gif';
+import Gif from './Gif.js';
 const Homepage = () => {
   useEffect(() => {
     let authToken = sessionStorage.getItem('Auth Token')
