@@ -87,7 +87,7 @@ const Homepage = () => {
       <div className="output">
 
       {gifdata && gifdata.map((datas,index)=>(
-       <GIF  data={datas} keys={index}/>
+       <GIF key={index} data={datas} keys={index}/>
         
       ))}
 
